@@ -3,4 +3,6 @@
 
 html, body {
 	font-family:'Roboto Mono', monospace;
+	color: #fff;
+	background-color: #000;
 }
