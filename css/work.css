@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {
+  background: rgba(0,0,0,1);
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+
+  color: rgba(255,255,255,1);
+
+} a:hover {
+
+  color: rgba(255,255,255,1);
+
+}
+
+::selection {
+  background: white;
+  color: #000;
+} ::-moz-selection {
+  background: rgba(255,255,255,1);
+  color: #000;
+}
+
+.work_grid {
+  display: table;
+
+  width: 100%;
+  height: 100%;
+}
+
+.work_toprow {
+  display: table-row;
+
+  width: 100%;
+  height: 100%;
+}
+
+.work_return {
+  display: table-cell;
+
+  min-width: 130px;
+
+  cursor: url('../images/cursors/work_closenav.png'), e-resize;
+
+  z-index: 100;
+} a .work_return,
+  a:link .work_return,
+  a:hover .work_return,
+  a:active .work_return,
+  a:visited .work_return {
+  color: rgba(0,0,0,1);
+  font-weight: regular;
+  text-decoration: none;
+}
+
+.tooltips_work_return {
+  display: none;
+
+  float: left;
+
+  position: absolute;
+
+  padding: 1px;
+
+  color: rgba(0,0,0,1);
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+
+  background: rgba(247,104,104,1);
+
+  z-index: 120;
+}
+
+.work_back {
+  display: table-cell;
+
+  position: relative;
+
+  width: 87%;
+
+  padding: 0px 30px 30px 30px;
+
+  background: url('../images/materials/tatteredfabric_work.png') repeat-y rgba(247,234,91,1);
+  background-position: right top;
+
+  z-index: 102;
+}
+
+.work_content {
+  position: relative;
+  left: -100%;
+
+  min-width: 300px;
+}
