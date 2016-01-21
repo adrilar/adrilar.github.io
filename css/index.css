@@ -11,3 +11,300 @@ html, body {
   -ms-user-select: none;
   user-select: none;
 }
+
+.container {
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: #000;
+}
+
+.gridtop {
+	display: table;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 100;
+}
+
+/* grid */
+
+	.toprow {
+		display: table-row;
+
+		margin: 0;
+		padding: 0;
+
+		height: 0;
+	} .topleft,
+	 	.topcenter,
+		.topright {
+		display: table-cell;
+
+		position: relative;
+
+		background: rgba(0,0,0,1);
+
+		z-index: 100;
+	}
+
+	.centerrow {
+		display: table-row;
+
+		margin: 0;
+		padding: 0;
+
+		height: 0;
+	} .centerleft,
+	 	.centerright {
+		display: table-cell;
+
+		position: relative;
+
+		vertical-align: middle;
+
+		background: rgba(0,0,0,1);
+
+		z-index: 100;
+	} .centercenter {
+		display: table-cell;
+
+		position: relative;
+
+		width: 26%;
+		max-width: 390px;
+
+		background: rgba(255,255,255,1);
+	}
+
+	.bottomrow {
+		display: table-row;
+
+		margin: 0;
+		padding: 0;
+
+		height: 2000px;
+	} .bottomleft,
+	 	.bottomcenter,
+		.bottomright {
+		display: table-cell;
+
+		position: relative;
+
+		background: rgba(0,0,0,1);
+
+		z-index: 102;
+	}
+
+/* end grid */
+
+
+
+/* placeholders */
+
+	.topleft .placeholder,
+	.bottomright .placeholder {
+		width: 200%;
+	}
+
+/* end placeholders */
+
+
+
+/* signature */
+
+.centerbox {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+
+	cursor: url('../images/cursors/usual_border.png'), auto;
+} .signature {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	min-width: 130px;
+	min-height: 130px;
+	height: 100%;
+
+	z-index: 100;
+
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+} .signature img {
+}
+
+
+
+/* screens */
+
+.screens_work,
+.screens_contact,
+.screens_about {
+	position: absolute;
+
+	width: 100%;
+} .screens_work {
+	top: 0;
+	left: 100%;
+
+	/* background: rgba(247,234,91,1); yellow */
+
+	z-index: 97;
+} .screens_work img {
+	width: 167%;
+} .screens_contact {
+	top: 100%;
+	left: 0;
+
+	/* background: rgba(78,130,247,1);  blue */
+
+	z-index: 98;
+} .screens_contact img {
+	width: 100%;
+} .screens_about {
+	top: 0;
+	left: -178%;
+
+	/* background: rgba(247,104,104,1); red */
+
+	z-index: 99;
+} .screens_about img {
+	width: 167%;
+}
+
+
+
+/* links */
+
+	.links_work, .links_contact, .links_about {
+		font-size: 26px;
+	}
+
+	.links_work a,
+	.links_contact a,
+	.links_about a {
+		color: rgba(255,255,255,1);
+		font-weight: normal;
+		text-decoration: none;
+	} .links_work a:hover,
+	.links_contact a:hover,
+	.links_about a:hover {
+		color: rgba(0,0,0,1);;
+		text-decoration: none;
+	} .links_work a:hover {
+		background: rgba(247,234,91,1);
+	} .links_contact a:hover {
+		background: rgba(78,130,247,1);
+	} .links_about a:hover {
+		background: rgba(247,104,104,1);
+	}
+
+	.links_work {
+		float: left;
+
+		position: relative;
+		left: 100%;
+
+		width: 80px;
+
+		transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+	}
+
+	.links_contact {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+
+		padding: 26px 0 0 0;
+
+		width: 130px;
+	}
+
+	.links_about {
+		float: right;
+
+		position: relative;
+		left: -100%;
+
+		width: 100px;
+
+		transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+/* end links */
+
+/* big screens */
+
+	.bigscreens_work,
+	.bigscreens_contact,
+	.bigscreens_about {
+		position: absolute;
+
+		width: 100%;
+		height: 100%;
+
+		z-index: 101;
+	}
+
+	.bigscreens_work {
+		top: 0;
+		left: -100%;
+
+		background: url('../images/materials/tatteredfabric_back.png') right top repeat-y rgba(247,234,91,1);
+	}
+
+	.bigscreens_contact {
+		top: -100%;
+		left: 0;
+
+		background: rgba(78,130,247,1);
+
+		background: url('../images/materials/ironfence_bottom.png') left bottom repeat-x rgba(79,130,247,1);
+	}
+
+	.bigscreens_about {
+		top: 0;
+		left: 100%;
+
+		background: url('../images/materials/meshwork_back.png') repeat-y rgba(247,104,104,1);
+	}
+
+/* end big screens */

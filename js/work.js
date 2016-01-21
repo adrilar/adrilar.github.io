@@ -12,8 +12,8 @@ $( document ).ready(function() {
   // tooltips
   $(document).bind( 'mousemove', function(e){
 		$( '.tooltips_work_return' ).css({
-		   left:  e.pageX - 70,
-		   top:   e.pageY - 30,
+		   left:  e.pageX + 30,
+		   top:   e.pageY - 27,
 		});
 	});
 
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 
     // animations
     $( '.work_back' ).animate(
-      { "left" : "+=100%" }, swingtimes_back_out, "swing" );
+      { "left" : "-=100%" }, swingtimes_back_out, "swing" );
   });
 
 });

@@ -9,6 +9,8 @@ $( document ).ready(function() {
   var swingtimes_big = 400;
   var loadout = 900;
 
+  var slidewidth_bigscreens = $(window).width() - 205;
+
   // load in
     // animations
     $( '.bottomrow' ).animate(
@@ -45,7 +47,7 @@ $( document ).ready(function() {
 
     // animations
     $( '.bigscreens_work' ).animate(
-      { "left" : "+=100%" }, swingtimes_big, "swing" );
+      { "left" : "+=" + slidewidth_bigscreens }, swingtimes_big, "swing" );
   });
 
 
@@ -72,7 +74,7 @@ $( document ).ready(function() {
 
     // animations
     $( '.bigscreens_contact' ).animate(
-      { "top" : "+=100%" }, swingtimes_big, "swing" );
+      { "top" : "+=91%" }, swingtimes_big, "swing" );
   });
 
 
@@ -99,7 +101,7 @@ $( document ).ready(function() {
 
     // animations
     $( '.bigscreens_about' ).animate(
-      { "left" : "-=87%" }, swingtimes_big, "swing" );
+      { "left" : "-=" + slidewidth_bigscreens }, swingtimes_big, "swing" );
 
     //$( '.gridtop' ).animate(
       //{ "left" : "-=100%" }, swingtimes_big, "swing" );
